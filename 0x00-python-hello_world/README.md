@@ -1,0 +1,1 @@
+This directory contains my Hello World exercise files.
