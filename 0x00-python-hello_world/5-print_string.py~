@@ -1,3 +1,0 @@
-#!/usr/bin/python3
-str = "Holberton School"
-printf(f"{3 * str}")
