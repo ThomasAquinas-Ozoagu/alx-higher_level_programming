@@ -1,0 +1,1 @@
+This directory contains my exercise files for loops and conditional statements.
