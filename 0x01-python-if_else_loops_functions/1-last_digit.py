@@ -5,10 +5,11 @@ nos = str(number)
 z = nos[-1]
 x = int(z)
 if x > 5:
-    print(f"Last digit of {number} is {x} and is greater than 5")
+    print("Last digit of {:d} is {:d} and is greater than 5".format(number, x))
 
 elif x == 0:
-    print(f"Last digit of {number} is {x} and is 0")
+    print("Last digit of {:d} is {:d} and is 0".format(number, x))
 
 else:
-    print(f"Last digit of {number} is {x} and is less than 6 and not 0")
+    print("Last digit of {:d} is {:d} and is less than 6 and not 0"
+          .format(number, x))
