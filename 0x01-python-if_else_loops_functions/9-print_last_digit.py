@@ -14,4 +14,4 @@ def print_last_digit(number):
         z = z % 10
 
     print(z, end="")
-    return(z)
+    return (z)
