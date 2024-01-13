@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
+y = 0
 if number < 0:
+    y = -1
     z = -1 * number
 else:
     z = number
@@ -14,11 +16,12 @@ if z > 9:
     z = z % 10
 
 if z > 5:
-    print("Last digit of {:d} is {:d} and is greater than 5".format(number, z))
+    print("Last digit of {:d} is {:d} and is greater than 5"
+          .format(number, z * y))
 
 elif z == 0:
-    print("Last digit of {:d} is {:d} and is 0".format(number, z))
+    print("Last digit of {:d} is {:d} and is 0".format(number, z * y))
 
 else:
     print("Last digit of {:d} is {:d} and is less than 6 and not 0"
-          .format(number, z))
+          .format(number, z * y))
