@@ -26,6 +26,10 @@ def print_reversed_list_integer(my_list=[]):
 def new_in_list(my_list, idx, element):
 #endif /* _NEW_IN_LIST_ */
 
+#ifndef _MY_STRING_
+#define _MY_STRING_
+def no_c(my_string):
+#endif /* _MY_STRING_  */
 
 
 #endif /* _LISTS_H_ */
