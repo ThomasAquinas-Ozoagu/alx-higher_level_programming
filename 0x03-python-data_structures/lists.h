@@ -31,5 +31,10 @@ def new_in_list(my_list, idx, element):
 def no_c(my_string):
 #endif /* _MY_STRING_  */
 
+#ifndef _PRINT_MATRIX_INTEGER_
+#define _PRINT_MATRIX_INTEGER_
+def print_matrix_integer(matrix=[[]]):
+#endif /* _PRINT_MATRIX_INTEGER_  */
+
 
 #endif /* _LISTS_H_ */
