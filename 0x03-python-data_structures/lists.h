@@ -11,5 +11,13 @@ def print_list_integer(my_list):
 def element_at(my_list, idx):
 #endif /*  _ELEMENT_AT_ */
 
+#ifndef _REPLACE_IN_LIST_
+#define _REPLACE_IN_LIST_
+def replace_in_list(my_list, idx, element):
+#endif /* _REPLACE_IN_LIST_ */
+
+
+
+
 
 #endif /* _LISTS_H_ */
