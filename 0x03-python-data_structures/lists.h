@@ -21,6 +21,10 @@ def replace_in_list(my_list, idx, element):
 def print_reversed_list_integer(my_list=[]):
 #endif /* _PRINT_REVERSED_LIST_INTEGER_ */
 
+#ifndef _NEW_IN_LIST_
+#define _NEW_IN_LIST_
+def new_in_list(my_list, idx, element):
+#endif /* _NEW_IN_LIST_ */
 
 
 
