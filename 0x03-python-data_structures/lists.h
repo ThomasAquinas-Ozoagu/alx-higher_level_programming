@@ -56,6 +56,10 @@ def max_integer(my_list=[]):
 def divisible_by_2(my_list=[]):
 #endif /* _DIVISIBLE_BY_2_  */
 
+#ifndef _DELETE_AT_
+#define _DELETE_AT_
+def delete_at(my_list=[], idx=0):
+#endif /*  _DELETE_AT_  */
 
 
 
