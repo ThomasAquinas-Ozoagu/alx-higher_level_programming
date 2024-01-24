@@ -41,6 +41,11 @@ def print_matrix_integer(matrix=[[]]):
 def add_tuple(tuple_a=(), tuple_b=()):
 #endif /* _ADD_TUPLE_  */
 
+#ifndef _MULTIPLE_RETURNS_
+#define _MULTIPLE_RETURNS_
+def multiple_returns(sentence):
+#endif /* _MULTIPLE_RETURNS_  */
+
 
 
 
