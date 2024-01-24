@@ -51,6 +51,10 @@ def multiple_returns(sentence):
 def max_integer(my_list=[]):
 #endif /* _MAX_INTEGER_  */
 
+#ifndef _DIVISIBLE_BY_2_
+#define _DIVISIBLE_BY_2_
+def divisible_by_2(my_list=[]):
+#endif /* _DIVISIBLE_BY_2_  */
 
 
 
