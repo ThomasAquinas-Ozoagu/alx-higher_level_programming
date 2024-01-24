@@ -36,5 +36,14 @@ def no_c(my_string):
 def print_matrix_integer(matrix=[[]]):
 #endif /* _PRINT_MATRIX_INTEGER_  */
 
+#ifndef _ADD_TUPLE_
+#define _ADD_TUPLE_
+def add_tuple(tuple_a=(), tuple_b=()):
+#endif /* _ADD_TUPLE_  */
+
+
+
+
+
 
 #endif /* _LISTS_H_ */
