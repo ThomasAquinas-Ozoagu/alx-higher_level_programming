@@ -46,6 +46,10 @@ def add_tuple(tuple_a=(), tuple_b=()):
 def multiple_returns(sentence):
 #endif /* _MULTIPLE_RETURNS_  */
 
+#ifndef _MAX_INTEGER_
+#define _MAX_INTEGER_
+def max_integer(my_list=[]):
+#endif /* _MAX_INTEGER_  */
 
 
 
