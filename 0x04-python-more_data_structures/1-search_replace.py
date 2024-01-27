@@ -2,10 +2,7 @@
 
 
 def search_replace(my_list, search, replace):
-    new = []
-    for n in range(len(my_list)):
-        if my_list[n] == search:
-            new.append(replace)
-        else:
-            new.append(my_list[n])
+
+    new = list(map(lambda x, y=search, z=replace:
+                   z if x == y else x, my_list))
     return(new)
