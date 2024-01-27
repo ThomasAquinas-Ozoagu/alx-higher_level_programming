@@ -2,12 +2,10 @@
 
 
 def square_matrix_simple(matrix=[]):
-    x = len(matrix)
-    y = len(matrix[0])
-    rows = []
-    for n in range(x):
-        cols = []
-        for m in range(y):
-            cols.append(matrix[n][m] * matrix[n][m])
-        rows.append(cols)
-    return rows
+    m = len(matrix)
+    n = len(matrix[0])
+    result = []
+    for a in range(m):
+        ans = list(map(lambda x: x * x, matrix[a]))
+        result.append(ans)
+    return result
