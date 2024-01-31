@@ -2,4 +2,5 @@
 
 
 class Square:
-    pass  # An empty class just for practice
+    """ This is an empty class, the methods and attributes will come later"""
+    pass
