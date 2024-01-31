@@ -3,4 +3,3 @@
 
 class Square:
     """ This is an empty class, the methods and attributes will come later"""
-    pass
