@@ -12,3 +12,22 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
+    def size(self, value=None):
+        print("the value is {}".format("value"))
+        """ This method returns the private attribute"""
+        if not value:
+            value = self.__size
+        if type(value) != int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
+
+    def size(self):
+        """ This method returns the private attribute"""
+        return (self.__size)
+
+    def area(self):
+        return (self.__size * self.__size)
