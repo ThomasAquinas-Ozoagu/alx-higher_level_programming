@@ -33,7 +33,7 @@ class Square:
     def position(self, position):
         """ This method returns the value of the private attribute"""
         if type(position) != tuple or position[0] < 0 or position[1] < 0:
-            raise TypeError("psition must be a tuple of 2 positive integers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = position
 
