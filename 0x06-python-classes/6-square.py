@@ -32,7 +32,8 @@ class Square:
     @position.setter
     def position(self, position):
         """ This method returns the value of the private attribute"""
-        if type(position) != tuple or position[0]<0 or position[1]<0:
+        if type(position) != tuple or position[0] < 0
+        or position[1] < 0:
             raise TypeError("psition must be a tuple of 2 positive integers")
         else:
             self.__position = position
@@ -45,6 +46,6 @@ class Square:
             print()
         else:
             if self.__position[1] > 0:
-               print("{}".format("\n"*(self.__position[1] - 1)))
+                print("{}".format("\n"*(self.__position[1] - 1)))
             for a in range(self.__size):
                 print("{}{}".format(" "*self.__position[0], "#"*self.__size))
