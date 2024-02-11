@@ -45,6 +45,6 @@ class Square:
             print()
         else:
             if self.__position[1] > 0:
-                print("{}".format("\n"*(self.__position[1])))
+                print("{}".format("\n"*(self.__position[1] - 1)))
             for a in range(self.__size):
                 print("{}{}".format(" "*self.__position[0], "#"*self.__size))
