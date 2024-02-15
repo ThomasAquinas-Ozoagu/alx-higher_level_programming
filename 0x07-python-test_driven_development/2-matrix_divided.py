@@ -1,15 +1,22 @@
 #!/usr/bin/python3
 """
 Prototype: def matrix_divided(matrix, div):
-matrix must be a list of lists of integers or floats, otherwise raise a TypeError exception with the message matrix must be a matrix (list of lists) of integers/floats
-Each row of the matrix must be of the same size, otherwise raise a TypeError exception with the message Each row of the matrix must have the same size
-div must be a number (integer or float), otherwise raise a TypeError exception with the message div must be a number
-div can’t be equal to 0, otherwise raise a ZeroDivisionError exception with the message division by zero
-All elements of the matrix should be divided by div, rounded to 2 decimal places
+matrix must be a list of lists of integers or floats, otherwise raise a
+TypeError exception with the message matrix must be a matrix (list of
+lists) of integers/floats
+Each row of the matrix must be of the same size, otherwise raise a
+TypeError exception with the message Each row of the matrix must have
+the same size
+div must be a number (integer or float), otherwise raise a TypeError
+exception with the message div must be a number
+div can’t be equal to 0, otherwise raise a ZeroDivisionError exception
+with the message division by zero
+All elements of the matrix should be divided by div, rounded to 2 decimal
+places
 Returns a new matrix
 You are not allowed to import any module
-
 """
+
 
 def matrix_divided(matrix, div):
     """
@@ -18,12 +25,14 @@ def matrix_divided(matrix, div):
     """ Checks if matrix is a list of integers or floats """
     for a in range(len(matrix)):
         if type(matrix[a]) != list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError("matrix must be a matrix (list of lists) \
+of integers/floats")
 
     for a in range(len(matrix)):
         for b in range(len(matrix[a])):
             if type(matrix[a][b]) != int and type(matrix[a][b]) != float:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) of \
+integers/floats")
 
     """ Checks if every row is the same size """
     rowlen = len(matrix[0])
