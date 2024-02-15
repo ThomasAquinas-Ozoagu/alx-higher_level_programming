@@ -25,5 +25,9 @@ b must be an integer
 ...     print(e)
 ...
 a must be an integer
+>>> print(add_integer(3, 2))
+5
+>>> print(add_integer(-10, 13))
+3
 
 """
