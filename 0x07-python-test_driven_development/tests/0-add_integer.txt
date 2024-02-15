@@ -1,9 +1,9 @@
-""" In this module, I wrote functions to be tested """
+""" In this module, I wrote functions to be tested
 
 >>> add_integer = __import__('0-add_integer').add_integer
 
-""" a function that adds 2 integers
-    Both numbers must be integers, else you'll get a ValueError Message
+a function that adds 2 integers
+Both numbers must be integers, else you'll get a ValueError Message
 
 >>> print(add_integer(1, 2))
 3
