@@ -1,4 +1,4 @@
-""" This is my doctest file for 2-matrix_divided.py
+This is my doctest file for 2-matrix_divided.py
 
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
@@ -54,6 +54,3 @@ division by zero
 ... 	print(e)
 ...
 matrix must be a matrix (list of lists) of integers/floats
-
-
-"""
