@@ -3,5 +3,5 @@
 
 
 class Rectangle:
-        """ This is an empty class, the methods/attributes will come later"""
-        pass
+    """ This is an empty class, the methods/attributes will come later"""
+    pass
