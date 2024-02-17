@@ -1,0 +1,30 @@
+My test file for 5-text_indentation.py
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("""Lorem ipsum dolor sit amet, elit.Quonam""")
+Lorem ipsum dolor sit amet, elit.
+<BLANKLINE>
+Quonam
+
+>>> text_indentation("""modo?Utrum igitur tinas commovere""")
+modo?
+<BLANKLINE>
+Utrum igitur tinas commovere
+
+>>> text_indentation("""Non autem hoc:igitur ne illud""")
+Non autem hoc:
+<BLANKLINE>
+igitur ne illud
+
+>>> text_indentation("""vicimus. Inde sermone vario""")
+vicimus.
+<BLANKLINE>
+Inde sermone vario
+
+>>> try:
+...      text_indentation(1207)
+... except Exception as e:
+...     print(e)
+...
+text must be a string
