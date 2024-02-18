@@ -6,8 +6,8 @@ class Rectangle:
     """ This is an empty class, the methods/attributes will come later"""
     def __init__(self, width=0, height=0):
         """ This is an instantiation with optional values """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
         @property
         def width(self):
