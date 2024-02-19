@@ -20,21 +20,21 @@ class Rectangle:
         return self.__height
 
     @width.setter
-    def width(self, value):
+    def width(self, widt):
         """ This method modifies the private attribute"""
-        if type(value) != int:
+        if type(widt) != int:
             raise TypeError("width must be an integer")
-        if value < 0:
+        if widt < 0:
             raise ValueError("width must be >= 0")
         else:
-            self.__width = value
+            self.__width = widt
 
     @height.setter
-    def height(self, value):
+    def height(self, heigh):
         """ This method modifies the private attribute"""
-        if type(value) != int:
+        if type(heigh) != int:
             raise TypeError("height must be an integer")
-        if value < 0:
+        if heigh < 0:
             raise ValueError("height must be >= 0")
         else:
-            self.__height = value
+            self.__height = heigh
