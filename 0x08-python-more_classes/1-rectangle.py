@@ -29,7 +29,6 @@ class Rectangle:
         else:
             self.__width = widt
 
-
     @height.setter
     def height(self, heigh):
         """ This method modifies the private attribute"""
