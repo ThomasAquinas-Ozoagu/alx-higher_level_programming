@@ -14,6 +14,11 @@ class Rectangle:
         """ This method returns the private attribute"""
         return self.__width
 
+    @property
+    def height(self):
+        """ This method returns the private attribute"""
+        return self.__height
+
     @width.setter
     def width(self, widt):
         """ This method modifies the private attribute"""
@@ -24,10 +29,6 @@ class Rectangle:
         else:
             self.__width = widt
 
-    @property
-    def height(self):
-        """ This method returns the private attribute"""
-        return self.__height
 
     @height.setter
     def height(self, heigh):
