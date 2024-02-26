@@ -42,15 +42,18 @@ class Rectangle:
             self.__height = value
 
     def area(self):
+        """ This returns the area of the rectangle """
         return self.__height * self.__width
 
     def perimeter(self):
+        """ This returns the perimeter of the rectangle """
         if self.__height == 0 or self.__width == 0:
             return 0
         else:
             return 2 * (self.__height + self.__width)
 
     def __str__(self):
+        """ This expresses the rectangle in 2D """
         if self.__height == 0 or self.__width == 0:
             return ""
         for a in range(self.__height - 1):
@@ -58,8 +61,10 @@ class Rectangle:
         return ('#'*self.__width)
 
     def __repr__(self):
+        """ This shows how the class can be used """
         return "Rectangle(2, 4)"
 
     def __del__(self):
+        """ This destroys an instance of the class """
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
