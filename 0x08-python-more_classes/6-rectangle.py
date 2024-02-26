@@ -3,8 +3,8 @@
 
 
 class Rectangle:
-    number_of_instances = 0
     """ This is a rectangle, it has a height and a width"""
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """ This is an instantiation with optional values """
         self.__width = width
