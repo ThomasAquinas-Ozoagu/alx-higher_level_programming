@@ -29,3 +29,13 @@ This is my test file for 1-my_list.p
 
 >>> print(my_list)
 [1, 4, 2, 3, 5, -6, 0]
+
+>>> my_list = [-9, -4, -8, -1, 0, -2]
+
+>>> print(my_list)
+[-9, -4, -8, -1, 0, -2]
+
+>>> my_list.print_sorted()
+
+>>> print(my_list)
+[-9, -8, -4, -2, -1, 0]
