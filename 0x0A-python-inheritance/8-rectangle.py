@@ -6,6 +6,8 @@ class BaseGeometry:
     """ This class will be used to practice how to display default
     class parameters'
     """
+    def __init__(self):
+        pass
 
     def area(self):
         """ raises an Exception """
