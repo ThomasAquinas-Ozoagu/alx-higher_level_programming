@@ -20,8 +20,9 @@ class BaseGeometry:
 class Rectangle(BaseGeometry):
     """ This class will be used to practice inheritance """
     def __init__(self, width, height):
-        """ Instantiation of Rectangle class """
-        super().__init__()
+        """ Instantiation of Rectangle class
+        BaseGeometry().__init__()
+        """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
