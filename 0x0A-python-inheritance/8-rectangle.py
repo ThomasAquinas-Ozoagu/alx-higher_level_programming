@@ -17,6 +17,7 @@ class BaseGeometry:
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
+
 class Rectangle(BaseGeometry):
     """ This class will be used to practice inheritance """
     def __init__(self, width, height):

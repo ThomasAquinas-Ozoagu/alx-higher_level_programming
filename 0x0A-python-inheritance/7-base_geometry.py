@@ -6,6 +6,10 @@ class BaseGeometry:
     """ This class will be used to practice how to display default
     class parameters'
     """
+    def __init__(self):
+        """ An empty init, class has no variables yet """
+        pass
+
     def area(self):
         """ raises an Exception """
         raise Exception("area() is not implemented")
