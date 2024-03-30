@@ -14,13 +14,14 @@ class Student:
         """  retrieves a dictionary representation of a Student instance """
         if attrs:
             half = {}
-            if "first_name" in attrs:
-                half["first_name"] = self.first_name
-            if "last_name" in attrs:
-                half["last_name"] = self.last_name
             if "age" in attrs:
                 half["age"] = self.age
+            if "last_name" in attrs:
+                half["last_name"] = self.last_name
+            if "first_name" in attrs:
+                half["first_name"] = self.first_name
+
             return half
 
-        return {"first_name": self.first_name,
-                "last_name": self.last_name, "age": self.age}
+        return {"age": self.age, "last_name": self.last_name,
+                "first_name": self.first_name}
