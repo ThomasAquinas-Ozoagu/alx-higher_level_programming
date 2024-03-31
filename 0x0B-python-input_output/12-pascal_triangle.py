@@ -3,12 +3,10 @@
 
 
 def pascal_triangle(n):
-    """ a function that returns a list of lists of integers representing
-    the Pascal’s triangle of n """
+    """returns list of lists of integers representing Pascal’s triangle of n"""
     if n <= 0:
         return []
     x = 1
-
     outer = []
     """ print("outer is now ", outer)"""
     while x <= n:
@@ -35,15 +33,19 @@ def pascal_triangle(n):
 
             if y == x:
                 inner.append(1)
-                """print("After {}={} = {} --> {}".format(x, y, inner, outer))"""
+                """print("After {}={} = {} --> {}".
+                format(x, y, inner, outer))"""
                 y += 1
                 continue
-            """print("before long append and I am {}{} = {} --> {}".format(x, y, inner, outer))"""
+            """print("before long append and I am {}{} = {} --> {}"
+            .format(x, y, inner, outer))"""
             inner.append(outer[x-2][y-2] + outer[x-2][y-1])
             y += 1
-        """print("before outer append and I am {}{} = {} --> {}".format(x, y, inner, outer))"""
+        """print("before outer append and I am {}{} = {} --> {}"
+        .format(x, y, inner, outer))"""
         outer.append(inner)
         x += 1
-        """print("after we appended and I am {}{} = {} --> {}".format(x, y, inner, outer))"""
+        """print("after we appended and I am {}{} = {} --> {}"
+        .format(x, y, inner, outer))"""
         """print(outer)"""
     return outer
