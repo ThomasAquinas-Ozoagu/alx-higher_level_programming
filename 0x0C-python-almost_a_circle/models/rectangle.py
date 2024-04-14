@@ -10,8 +10,8 @@ class Rectangle(Base):
         """ Class  constructor """
         self.__width = width
         self.__height = height
-        __x = x
-        __y = y
+        self.__x = x
+        self.__y = y
         super().__init__()
         if id is not None:
             self.id = id
