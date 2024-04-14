@@ -109,3 +109,14 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         self.set_y(value)
+
+    def display(self):
+        """ displays the rectangle using '#' """
+        a = 0
+        while a < self.__height:
+            b = 0
+            while b < self.__width:
+                print("#", end="")
+                b += 1
+            print()
+            a += 1
