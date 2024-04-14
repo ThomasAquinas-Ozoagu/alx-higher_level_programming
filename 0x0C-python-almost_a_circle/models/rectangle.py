@@ -21,6 +21,7 @@ class Rectangle(Base):
             self.id = self._Base__nb_objects
 
     def area(self):
+        """ returns the area value of the Rectangle instance """
         return (self.__width * self.__height)
 
     def get_width(self):
