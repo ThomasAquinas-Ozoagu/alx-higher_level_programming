@@ -105,3 +105,6 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         self.set_y(value)
+
+    def area(self):
+        return self.__width * self.__height
