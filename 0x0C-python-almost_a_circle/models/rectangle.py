@@ -13,7 +13,7 @@ class Rectangle(Base):
         self.set_x(x)
         self.set_y(y)
 
-        super().__init__()
+        super().__init__(id)
 
         if id is not None:
             self.id = id
@@ -120,3 +120,8 @@ class Rectangle(Base):
                 b += 1
             print()
             a += 1
+
+    def __str__(self):
+        return ("[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                 self.id, self.__x, self.__y,
+                                                 self.__width, self.__height))
