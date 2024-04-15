@@ -112,9 +112,14 @@ class Rectangle(Base):
 
     def display(self):
         """ displays the rectangle using '#' """
+        z = 0
+        while z < self.__y:
+            print()
+            z += 1
         a = 0
         while a < self.__height:
             b = 0
+            print(" " * self.__x, end="")
             while b < self.__width:
                 print("#", end="")
                 b += 1
