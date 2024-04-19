@@ -132,7 +132,7 @@ class Rectangle(Base):
                                                  self.__width, self.__height))
 
     def update(self, *args):
-        if len(args) >0:
+        if len(args) > 0:
             self.id = args[0]
         if len(args) > 1:
             self.__width = args[1]
