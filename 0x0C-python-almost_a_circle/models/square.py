@@ -12,4 +12,4 @@ class Square(Rectangle):
     def __str__(self):
         """ The string representation for the class """
         return "[{}] ({}) {}/{} - {}".format(self.__class__.__name__, self.id,
-                                           self.x, self.y, self.width)
+                                             self.x, self.y, self.width)
