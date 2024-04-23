@@ -127,6 +127,7 @@ class Rectangle(Base):
             a += 1
 
     def __str__(self):
+        """ Returns the string representation for the class """
         return ("[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
                                                  self.id, self.__x, self.__y,
                                                  self.__width, self.__height))
@@ -156,3 +157,8 @@ class Rectangle(Base):
                 self.set_x(kwargs['x'])
             if 'y' in kwargs:
                 self.set_y(kwargs['y'])
+
+    def to_dictionary(self):
+        """ returns the dictionary representation of a Rectangle """
+        return {'x': self.x, 'y': self.y, 'id': self.id, 'height': self.height,
+                'width': self.width}
