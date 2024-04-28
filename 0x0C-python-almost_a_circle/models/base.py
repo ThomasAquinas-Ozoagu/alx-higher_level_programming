@@ -7,6 +7,16 @@ class Base:
     """ The base class """
     __nb_objects = 0
 
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """ writes the JSON string representation of list_objs to a file """
+        newlist = []
+        for x in range(len(list_objs)):
+            newlist.append(list_objs[x].to_dictionary())
+
+        with open('{}.json'.format(cls.__name__), "w") as file:
+            file.write(Base.to_json_string(newlist))
+
     def __init__(self, id=None):
         if id is not None:
             self.id = id

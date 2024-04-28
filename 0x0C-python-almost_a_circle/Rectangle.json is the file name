@@ -1,0 +1,1 @@
+Base.to_json_string(list_objs)
