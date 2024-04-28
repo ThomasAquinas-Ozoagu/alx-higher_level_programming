@@ -10,6 +10,8 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """ writes the JSON string representation of list_objs to a file """
+        if list_objs is None or list_objs == []:
+            return []
         newlist = []
         for x in range(len(list_objs)):
             newlist.append(list_objs[x].to_dictionary())
@@ -18,6 +20,7 @@ class Base:
             file.write(Base.to_json_string(newlist))
 
     def __init__(self, id=None):
+        """ initializes class """
         if id is not None:
             self.id = id
         else:
