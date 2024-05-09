@@ -5,7 +5,6 @@
 const arg1 = Number(process.argv[2]);
 const roww = 'x';
 
-
 if (isNaN(arg1)) {
   console.log('Missing size');
 } else {
