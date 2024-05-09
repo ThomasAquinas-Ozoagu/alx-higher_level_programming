@@ -3,7 +3,7 @@
 /* a script that prints x times “C is fun” */
 
 const arg1 = Number(process.argv[2]);
-const roww = 'x';
+const roww = 'X';
 
 if (isNaN(arg1)) {
   console.log('Missing size');
